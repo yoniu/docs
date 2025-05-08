@@ -3,6 +3,21 @@ title: Introduction
 description: "Welcome to the home of your new documentation"
 ---
 
+export const Counter = () => {
+  const [count, setCount] = useState(0);
+  
+  return (
+    <div>
+      <p>Current count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>
+        +
+      </button>
+    </div>
+  );
+}
+
+<Counter />
+
 <img
   className="block dark:hidden"
   src="/images/hero-light.png"
